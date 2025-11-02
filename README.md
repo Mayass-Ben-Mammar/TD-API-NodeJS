@@ -1,24 +1,53 @@
 # TD-API-NodeJS
 Ce TD a pour but de nous apprendre à faire une API local à l'aide de Node.js <br>
 
+# Structure du projet
+
+```
+TD-API-NodeJS/
+├── src/
+│   ├── controllers/
+│   │   └── userController.ts
+│   ├── routes/
+│   │   └── userRoutes.ts
+│   ├── app.ts
+│   └── server.ts
+├── .env
+├── tsconfig.json
+├── package.json
+└── README.md
+```
+
 # Le necessaires
+
 Principale : express, dotenv <br>
 Developpement : typescript ts-node <br>
 
 # Comment faire ?
 
-il faudra utilisé nmp pour installé le necessaires : <br>
+```
+git clone https://github.com/[ton_pseudo]/TD-API-NodeJS.git
+cd TD-API-NodeJS
+npm install
+```
 
-npm install express dotenv <br> 
+# Lancement du serveur
 
-npm install -D typescript ts-node @types/node @types/express nodemon <br> 
+```
+npm run build
+npm start
+```
 
-# Finalisation
+Ou en mode développement :
 
-On utilisera une commande pour lancer l'api en local : <br> 
+```
+npm run dev
+```
 
-npm run dev <br>
+Le serveur démarre sur le port défini dans `.env` :
 
-Et pour recuperer les informations : <br>
+```
+PORT=4000
 
 curl -X GET http://localhost:4000/users 
+```
