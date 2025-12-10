@@ -26,7 +26,7 @@ Developpement : typescript ts-node <br>
 # Comment faire ?
 
 ```
-git clone https://github.com/[ton_pseudo]/TD-API-NodeJS.git
+git clone https://github.com/[pseudo]/TD-API-NodeJS.git
 cd TD-API-NodeJS
 npm install
 ```
